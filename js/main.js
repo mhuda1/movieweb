@@ -67,7 +67,7 @@ function getMovie(){
             ${movie.overview}
             <hr>
             <a onclick="favoriteSelected('${movie.id}', '${movie.title}')" class="btn btn-primary" href=#>Add to favorites</a>
-            <a href="index.html" class="btn btn-default">Go Back To Discover</a>
+            <a href="index.html" class="btn btn-warning">Go Back To Discover</a>
           </div>
         </div>
         `;
@@ -80,7 +80,6 @@ function getMovie(){
 }
 
 function getDiscover(){
-  console.log('haha')
   axios.get('https://api.themoviedb.org/3/discover/movie?api_key=6be75f67395913eaf1a30277bde07319')
   .then((response) => {
     console.log(response);
