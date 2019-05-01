@@ -1,0 +1,33 @@
+.navbar{
+    font-family: 'Karla', sans-serif;
+    background: orange;
+}
+.navbar-brand{
+    font-size: 30px;
+    color: black;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-search {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    left: 43%;
+    text-align: center;
+}
+
+#movies img, #movie img{
+    width:100%;
+  }
+  
+  @media(min-width:960px){
+    #movies .col-md-3 .well{
+      height: 390px;
+    }
+  
+    #movies .col-md-3 img{
+      height:240px;
+    }
+  }
